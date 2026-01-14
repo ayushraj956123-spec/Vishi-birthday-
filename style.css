@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Dancing+Script:wght@600&display=swap');
+
+/* =====================
+   COMMON CSS (ALL PAGES)
+   ===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 28px;
+  background: #2f5d50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.btn:hover {
+  background: #1e4036;
+  transform: scale(1.05);
+}
+
+/* =====================
+   WELCOME PAGE
+   ===================== */
+.welcome {
+  background: linear-gradient(135deg, #cfe8d6, #f8e8dc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.center {
+  text-align: center;
+  padding: 20px;
+}
+
+.center h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  color: #2f5d50;
+}
+
+.typewriter {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.hearts::before {
+  content: "💚 💖 💚 💖 💚";
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  animation: float 4s infinite alternate;
+}
+
+@keyframes float {
+  from { transform: translateY(0); }
+  to { transform: translateY(20px); }
+}
+
+/* =====================
+   LOVE LETTER PAGE
+   ===================== */
+.love {
+  background: #fff8f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.letter {
+  max-width: 420px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.letter h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.2rem;
+  color: #2f5d50;
+  margin-bottom: 15px;
+}
+
+.letter p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.sign span {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.4rem;
+  color: #b04a4a;
+}
+
+/* =====================
+   REASONS PAGE
+   ===================== */
+.reasons {
+  background: linear-gradient(180deg, #e8f3ec, #fff);
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.2rem;
+  color: #2f5d50;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  max-width: 420px;
+  margin: auto;
+}
+
+.card {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 14px;
+  font-size: 0.95rem;
+  color: #444;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* =====================
+   GALLERY PAGE
+   ===================== */
+.gallery {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  max-width: 420px;
+  margin: auto;
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* =====================
+   SURPRISE PAGE
+   ===================== */
+.surprise {
+  background: radial-gradient(circle, #2f5d50, #000);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.surprise-box {
+  background: rgba(0,0,0,0.45);
+  padding: 30px 20px;
+  border-radius: 18px;
+  max-width: 420px;
+  animation: pop 1.2s ease;
+}
+
+.surprise-box h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+}
+
+.final-msg {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.from {
+  display: block;
+  margin-top: 15px;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+@keyframes pop {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
